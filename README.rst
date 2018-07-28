@@ -12,7 +12,7 @@
 * GitHub: https://github.com/mozillazg/python-pinyin
 * License: MIT license
 * PyPI: https://pypi.python.org/pypi/pypinyin
-* Python version: 2.6, 2.7, pypy, 3.3, 3.4, 3.5, 3.6
+* Python version: 2.6, 2.7, pypy, 3.3, 3.4, 3.5, 3.6, 3.7
 
 
 特性
@@ -48,10 +48,8 @@ Python 3(Python 2 下把 ``'中心'`` 替换为 ``u'中心'`` 即可):
     [['z'], ['x']]
     >>> pinyin('中心', style=Style.TONE2, heteronym=True)
     [['zho1ng', 'zho4ng'], ['xi1n']]
-    >>> pinyin('中心', style=Style.BOPOMOFO)  # 注音风格
-    [['ㄓㄨㄥ'], ['ㄒㄧㄣ']]
-    >>> pinyin('中心', style=Style.CYRILLIC)  # 俄语字母风格
-    [['чжун1'], ['синь1']]
+    >>> pinyin('中心', style=Style.TONE3)
+    [['zhong1'], ['xin1']]
     >>> lazy_pinyin('中心')  # 不考虑多音字的情况
     ['zhong', 'xin']
 
@@ -167,7 +165,7 @@ __ https://github.com/mozillazg/rust-pinyin
 .. |Coverage| image:: https://img.shields.io/coveralls/mozillazg/python-pinyin/master.svg?branch=master
    :target: https://coveralls.io/r/mozillazg/python-pinyin
 .. |PyPI version| image:: https://img.shields.io/pypi/v/pypinyin.svg
-   :target: https://pypi.python.org/pypi/pypinyin
+   :target: https://pypi.org/project/pypinyin
 
 .. _Russian translation: https://github.com/mozillazg/python-pinyin/blob/master/README_ru.rst
 .. _pinyin-data: https://github.com/mozillazg/pinyin-data
